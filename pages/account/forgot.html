@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechGear | Create an account</title>
-    <link rel="stylesheet" type="text/css" href="../../css/shared/footer.css">
     <link rel="stylesheet" type="text/css" href="../../css/shared/nav.css">
-    <link rel="stylesheet" type="text/css" href="../../css/account/signup.css">
-    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../css/shared/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/account/forgot.css">
+    <link rel="icon" type="image/x-icon" href="../../../images/favicon.ico">
     <script src="https://kit.fontawesome.com/711fad8b0c.js" crossorigin="anonymous"></script>
+    <script src="../../scripts/forgot.js" defer></script>
+    <title>TechGear | Forgot Password</title>
 </head>
 <body>
     <nav>
         <img class="logo" src="../../images/TechGear-Logo.png" alt="TechGear logo" width="50">
-        <a class="header" href="../../index.html">
+        <a class="header" href="../index.html">
             <h1 class="logo-header">TechGear</h1>
         </a>
         <div class="menu">
@@ -23,7 +24,7 @@
             <a href="../../pages/products.html">
                 <div>Products</div>
             </a>
-            <a href="../about-us.html">
+            <a href="../../pages/about-us.html">
                 <div>About Us</div>
             </a>
             <a href="../../pages/testimonials.html">
@@ -50,12 +51,12 @@
 
     <main>
         <div class="container">
-            <form>
-                <div class="register-card">
-                    <h2>Create Account</h2>
+            <div class="forgot-card">
+                <h2>Forgot Password</h2>
+                <div class="fields">
                     <div class="input">
                         <span>Email</span>
-                        <input type="email" placeholder="Email" required>
+                        <input id="email" type="email" placeholder="Email">
                     </div>
                     <div class="input row">
                         <div class="name-field">
@@ -71,22 +72,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="input">
-                        <span>Password</span>
-                        <input type="Password" placeholder="Password" required>
-                    </div>
-                    <div class="input">
-                        <span>Confirm Password</span>
-                        <input type="Password" placeholder="Confirm Password" required>
-                    </div>
-                    <div class="login">
-                        <span>Have an account? Click <a href="login.html">here</a> to login!</span>
-                    </div>
-                    <div class="submit">
-                        <a class="register" href="../account/login.html">Register!</a>
-                    </div>
+                    <button class="submit" onclick="sendForgot()">Submit!</button>
                 </div>
-            </form>
+            </div>
         </div>
     </main>
 

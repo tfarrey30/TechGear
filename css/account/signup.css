@@ -1,0 +1,97 @@
+h2 {
+    color: white;
+    border-bottom: 2px solid #007bff;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.register-card {
+    width: 400px;
+    height: fit-content;
+    background: linear-gradient(to right, #002244, #003366);
+    border: 2px solid #007bff;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    left: 40px;
+}
+
+.register {
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    line-height: 35px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: #004ea1;
+}
+
+.register-card input {
+    width: 250px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input span {
+    color: white;
+}
+
+.name-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.name input {
+    width: 125px;
+    box-sizing: border-box;
+}
+
+.input.row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.login span {
+    color: white;
+}
+
+.login a {
+    color: #177bff;
+    font-weight: bold;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,130 @@
+th {
+    background-color: #007bff;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.cart-display {
+    width: 900px;
+    height: 680px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.total {
+    color: white;
+}
+
+.grand-total span {
+    color: greenyellow;
+}
+
+.price, .product-name {
+    color: white;
+    text-align: center;
+}
+
+.product-name {
+    text-decoration: underline;
+}
+
+.quantity {
+    text-align: center;
+}
+
+.cart-table {
+    width: 100%;
+}
+
+.cart-table input[type="number"] {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.del {
+    text-align: center;
+}
+
+.btn-delete {
+    background-color: transparent;
+    color: red;
+    border: none;
+    font-size: large;
+}
+
+.btn-delete:hover {
+    color: rgb(250, 106, 106);
+    cursor: pointer;
+}
+
+.total {
+    border-top: 2px solid #007bff;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.total-item {
+    display: flex;
+    justify-content:space-around;
+    padding: 2px 0;
+}
+
+.grand-total {
+    font-weight: bold;
+    color: #007bff;
+    border-top: 2px solid #007bff;
+    padding-top: 10px;
+}
+
+.btn-checkout {
+    position: relative;
+    left: 410px;
+    top: 10px;
+    width: 145px;
+    height: 35px;
+    border: 2px solid #007bff;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-checkout:hover {
+    background-color: #2b2b2b;
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.discount-checkout span, .discount-checkout input {
+    color: white;
+    position: relative;
+    top: 12px;
+    left: 10px;
+}
+
+.discount-checkout input {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.discount-checkout input::placeholder {
+    color: white;
+    text-align: center;
+}

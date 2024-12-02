@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechGear | Products</title>
     <link rel="stylesheet" type="text/css" href="../css/shared/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/shared/footer.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/pages/product.css">  
+    <script src="https://kit.fontawesome.com/711fad8b0c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="../scripts/script.js" defer></script>    
 </head>
 <body>
     <nav>
+        <img class="logo" src="../images/TechGear-Logo.png" alt="TechGear logo" width="50">
+        <a class="header" href="../index.html">
+            <h1 class="logo-header">TechGear</h1>
+        </a>
         <div class="menu">
             <a href="../index.html">
                 <div>Home</div>
@@ -19,10 +27,116 @@
             <a href="/pages/about-us.html">
                 <div>About Us</div>
             </a>
-            <a href="/pages/reviews.html">
-                <div>Reviews</div>
+            <a href="/pages/testimonials.html">
+                <div>Testimonials</div>
             </a>
         </div>
+        <div class="profile-search">
+            <div class="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <div class="cart-items">0</div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search..">
+            </div>
+            <div class="profile">
+                <a href="/pages/account/login.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
     </nav>
+
+    <main class="container">
+        <div class="head">
+            <h2>Products</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img class="product-img" src="../images/products/laptop-ASUS.png" alt="An ASUS gaming laptop">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h2 class="card-title">ASUS Gaming Laptop</h2>
+                        <h3 class="new">NEW</h3>
+                    </div>
+                    <p class="description">A powerful laptop for gaming enthusiasts with high-end performance.</p>
+                    <div class="price">
+                        <p>$699.99</p>
+                    </div>
+                    <button onclick="addItem()" class="btn">Add To Cart</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img class="product-img" src="../images/products/Samsung-S24.png" alt="A Samsung smartphone">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h2 class="card-title">Samsung Galaxy S24</h2>
+                        <h3 class="new">NEW</h3>
+                    </div>
+                    <p class="description">The latest smartphone with an amazing camera.</p>
+                    <div class="price">
+                        <p>$799.99</p>
+                        <del>$999.99</del>
+                    </div>
+                    <button onclick="addItem()" class="btn">Add To Cart</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img class="product-img" src="../images/products/Sony-Wireless-Headphones.png" alt="Sony wireless headphones">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h2 class="card-title">Sony Wireless Headphones</h2>
+                        <h3 class="new">NEW</h3>
+                    </div>
+                    <p class="description">Experience high-quality sound with no wires.</p>
+                    <div class="price">
+                        <p>$199.99</p>
+                    </div>
+                    <button onclick="addItem()" class="btn" disabled>Add To Cart</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img class="product-img" src="../images/products/Apple-Smartwatch.png" alt="Apple smartwatch">
+                </div>
+                <div class="card-body">
+                    <div class="title">
+                        <h2 class="card-title">Apple Smartwatch</h2>
+                        <h3 class="new">NEW</h3>
+                    </div>
+                    <p class="description">A smartwatch with health and fitness tracking.</p>
+                    <div class="price">
+                        <p>$359.00</p>
+                        <del>$429.00</del>
+                    </div>
+                    <button onclick="addItem()" class="btn">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; TechGear 2024
+        <div class="socials">
+            <p>Connect with us!</p>
+            <div class="logos">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

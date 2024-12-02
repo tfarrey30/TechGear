@@ -1,0 +1,85 @@
+h2 {
+    color: white;
+    border-bottom: 2px solid #007bff;
+    width: 100%;
+}
+
+.login-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 40px;
+    width: 400px;
+    background: linear-gradient(to right, #002244, #003366);
+    border: 2px solid #007bff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login {
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    line-height: 35px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: #004ea1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.login-card input {
+    width: 250px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input span {
+    color: white;
+}
+
+.forgot-create {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.forgot-create span {
+    color: white;
+}
+
+.forgot-create a {
+    color: #177bff;
+    font-weight: bold;
+}

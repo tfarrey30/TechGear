@@ -1,0 +1,91 @@
+h2 {
+    color: white;
+    border-bottom: 2px solid #007bff;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.forgot-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 40px;
+    width: 400px;
+    background: linear-gradient(to right, #002244, #003366);
+    border: 2px solid #007bff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.fields {
+    position: relative;
+    bottom: 10px;
+}
+
+.forgot-card input {
+    width: 250px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.forgot-card span {
+    color: white;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submit {
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    color: white;
+    line-height: 35px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.submit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #004ea1;
+    cursor: pointer;
+}
+
+.name-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.name input {
+    width: 125px;
+    box-sizing: border-box;
+}
+
+.input.row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}

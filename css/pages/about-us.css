@@ -1,0 +1,54 @@
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background: linear-gradient(to right, #002244, #003366);
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container p {
+    color: white;
+    max-width: 1200px;
+}
+
+.container p strong {
+    color: gold;
+}
+
+.container .shop {
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    line-height: 50px;
+}
+
+.shop:hover {
+    background-color: #003366;
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,105 @@
+h3 {
+    color: white;
+}
+
+.main-header {
+    color: white;
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: static;
+    bottom: 100px;
+    margin: 10px;
+}
+
+.stars {
+    color: gold;
+}
+
+.review {
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.create-review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.create-review span {
+    color: white;
+}
+
+.info {
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.create {
+    width: 150px;
+    height: 40px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 40px;
+    text-align: center;
+}
+
+.create, .card {
+    background-color: #333333;
+}
+
+.create:hover {
+    background-color: #525252;
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.person {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 3px solid white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/shared/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/shared/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/pages/cart.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/711fad8b0c.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js" defer></script>
+    <title>TechGear | My Cart</title>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="../images/TechGear-Logo.png" alt="TechGear logo" width="50">
+        <a class="header" href="../index.html">
+            <h1 class="logo-header">TechGear</h1>
+        </a>
+        <div class="menu">
+            <a href="../index.html">
+                <div>Home</div>
+            </a>
+            <a href="/pages/products.html">
+                <div>Products</div>
+            </a>
+            <a href="/pages/about-us.html">
+                <div>About Us</div>
+            </a>
+            <a href="/pages/testimonials.html">
+                <div>Testimonials</div>
+            </a>
+        </div>
+        <div class="profile-search">
+            <div class="cart">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <div class="cart-items">0</div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search..">
+            </div>
+            <div class="profile">
+                <a href="/pages/account/login.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="cart-display">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product Image</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price (E.A.)</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="image">
+                                <img src="../images/products/Sony-Wireless-Headphones.png" alt="Sony Wireless Headphones" width="70">
+                            </td>
+                            <td class="product-name">Sony Wireless Headphones</td>
+                            <td class="quantity">
+                                <input class="quantity-input" type="number" value="1" min="1">
+                            </td>
+                            <td id="product-price" class="price">$199.99</td>
+                            <td class="del">
+                                <button class="btn-delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../images/products/Samsung-S24.png" alt="Sony Wireless Headphones" width="70">
+                            </td>
+                            <td class="product-name">Samsung S24</td>
+                            <td class="quantity">
+                                <input class="quantity-input" type="number" value="1" min="1">
+                            </td>
+                            <td id="product-price" class="price">$799.99</td>
+                            <td class="del">
+                                <button class="btn-delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image">
+                                <img src="../images/products/laptop-ASUS.png" alt="ASUS Gaming Laptop" width="70">
+                            </td>
+                            <td class="product-name">ASUS Gaming Laptop</td>
+                            <td class="quantity">
+                                <input class="quantity-input" type="number" value="1" min="1">
+                            </td>
+                            <td id="product-price" class="price">$699.99</td>
+                            <td class="del">
+                                <button class="btn-delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="total">
+                    <div class="total-item">
+                        <p>Subtotal:</p>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="total-item">
+                        <p>Tax (5%):</p>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="total-item">
+                        <p>Shipping:</p>
+                        <span id="shipping">$17.22</span>
+                    </div>
+                    <div class="total-item">
+                        <p>Discount:</p>
+                        <span id="total-discount">$0.00</span>
+                    </div>
+                    <div class="total-item grand-total">
+                        <p>Grand Total:</p>
+                        <span id="grand">$0.00</span>
+                    </div>
+                </div>
+                <div class="discount-checkout">
+                    <span>Have a discount code?</span>
+                    <input type="text" placeholder="Discount Code.." class="discount-input">
+                    <button class="btn-checkout">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; TechGear 2024
+        <div class="socials">
+            <p>Connect with us!</p>
+            <div class="logos">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

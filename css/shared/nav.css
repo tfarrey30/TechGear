@@ -1,20 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Saira", sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #222222;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 20px;
     background-color: #666666;
 
+}
+
+.logo-header {
+    color: rgb(219, 78, 247);
+    padding-left: 10px;
+}
+
+
+.logo-header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .menu {
     display: flex;
     justify-content: center;
+    flex: 1;
 }
 
 .menu div {
@@ -27,6 +50,12 @@ nav {
     border-radius: 5px;
     position: relative;
     left: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .menu div:hover {
@@ -37,7 +66,7 @@ nav {
     text-decoration: none;
 }
 
-.profile {
+.profile, .shopping-cart {
     border: 2px solid #ddd;
     width: 35px;
     height: 35px;
@@ -46,23 +75,26 @@ nav {
     align-items: center;
     justify-content: center;
     color: white;
-    margin-left: 15px;
 }
 
+.shopping-cart {
+    margin-right: 15px;
+}
 
-.profile a {
+.profile a, .shopping-cart a {
     text-decoration: none;
     color: inherit;
 }
 
-.profile, .search {
-    position: relative;
-    left: 350px;
-}
-
-.profile:hover {
+.profile:hover, .shopping-cart:hover {
     background-color: #a8a8a8;
     cursor: pointer;
+}
+
+.profile-search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .search input {
@@ -71,8 +103,54 @@ nav {
     border: 2px solid black;
     height: 30px;
     color: white;
+    margin-right: 15px;
 }
 
 .search input::placeholder {
     color: white;
+}
+
+.cart {
+    position: relative;
+    margin-right: 15px;
+    width: 40px; /* Size of the outer circle */
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 50%; /* Circular border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+}
+
+/* The cart icon inside the circle */
+.cart i {
+    font-size: 17px; /* Adjust cart icon size */
+}
+
+.cart:hover {
+    background-color: #a1a1a1a4;
+    cursor: pointer;
+}
+
+.cart a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* The red badge for the item count */
+.cart-items {
+    position: absolute;
+    bottom: -3px;
+    right: -8px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px; /* Adjust font size for count */
 }
